@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8372c41070.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <img src="images/logo__8_-removebg-preview.png" alt="" class="logo">
+        <ul class="navlinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Travel Resources</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="ctn">Book trip</a></li>
+        </ul>
+        <i class="fa-solid fa-bars" id="menu-bar"></i>
+    </nav>
+    <header>
+        <div class="header-content">
+            <h1>THE WANDERLUST WITHIN</h1>
+            <p>Hidden Gems Around The World</p>
+            <a href="#" class="ctn">View More</a>
+        </div>
+    </header>
+    <section>
+        <div class="title">
+            <h3>Upcoming Events</h3>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="images/pic1 (1).jpg" alt="" class="Brazil">
+                <h4>Maldives</h4>
+                <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Rerum, laudantium!</p>
+                    <a href="#" class="ctn1">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="images/pic1 (2).jpg" alt="" class="Brazil" >
+                <h4>Brazil</h4>
+                <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Rerum, laudantium!</p>
+                <a href="#" class="ctn1">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <section class="explore">
+        <div class="explore-content">
+            <h4>Explore The World</h4>
+        <p>Looking for some travel inspiration!? These inspirational<br> explore the world quotes will definitely hit home and<br> motivate you to pack your suitcase, book a flight,<br> and jet-off on your next international trip!</p>
+        <a href="#" class="ctn">More</a>
+        </div>
+    </section>
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h3>UPCOMING TOURS AND DESTINATIONS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quo
+                    dignissimos eius quidem culpa, beatae quasi ea cum minima reiciendis ut
+                    molestiae consequuntur doloribus aperiam neque eaque, at placeat natus.</p>
+                 <a href="#" class="ctn1">View More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="images/img(3).jpg" alt="" class="logou">
+                    <img src="images/img(1).jpg" alt="" class="logou">
+                    <img src="images/img(2).jpg" alt="" class="logou">
+                    <img src="images/img(4).jpg" alt="" class="logou">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fotter">
+        <div class="social-media">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="copy-content">
+            Copyright 2022. The WANDERLUST WITHIN .
+All photos, unless<br> otherwise stated, are the property of lokesh.<br>
+ designed by loki.wedev.
+        </div>
+    </section>
+
+
+
+    <script>
+        const menuBtn = document.querySelector('#menu-bar')
+        const navlinks = document.querySelector('.navlinks')
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>
