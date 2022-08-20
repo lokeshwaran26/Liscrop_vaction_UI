@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+ul
+{
+    list-style: none;
+}
+body , html{
+    overflow-x: hidden;
+}
+.navbar
+{
+    position: absolute;
+    display: flex;
+    left:0;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 3rem;
+    color: whitesmoke;
+    
+    
+}
+.navlinks
+{
+
+    display: flex;
+    font-size: 5rem;
+    font-family: Poppins,sans-serif;
+    align-items: center;
+}
+.logo
+{
+    margin-top: 0.4rem;
+    width: 25vh;
+    height: 5vh;
+}
+.navlinks li 
+{
+    margin: 0 2rem;
+}
+header
+{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/thai-an-yJmlneHkR_8-unsplash.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-content
+{
+    margin-bottom: 32rem;
+    color: whitesmoke;
+    text-align: center;
+    font-family: Poppins,sans-serif;
+}
+.header-content h1{
+    font-size: 7vmin;
+}
+.header-content p{
+    font-size: 4.2vmin;
+    margin-bottom: 1.8rem;
+}
+.ctn{
+    padding: 1rem 2rem;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 1.6rem;
+    border-radius: 3rem;
+}
+.ctn1
+{
+    padding: 1rem 2rem;
+    background-color: black;
+    color: white;
+    font-size: 1.6rem;
+    border-radius: 3rem;
+}
+#menu-bar
+{
+    position: absolute;
+    font-size: 2rem;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+}
+section
+{
+    width: 80%;
+    margin: 80px auto;
+}
+.title
+{
+    text-align: center;
+    font-size: 8vmin;
+    font-family: poppins,sans-serif;
+    margin-bottom: 3rem;
+}
+.row
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.row .col img
+{
+    width: 500px;
+}
+.row  .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    font-family: Poppins,sans-serif;
+    margin: 2rem 4rem;
+}
+col ,h4,p,a{
+    margin-top: 1.5rem;
+}
+.explore
+{
+    width:100%;
+    height: 80vh;
+    background-image:  url(images/pic\(3\).jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+
+}
+.explore-content
+{
+    width: 60%;
+    font-size: 4vmin;
+    font-family: Poppins,sans-serif;
+    color: white;
+    margin: 10% 5%;
+    display: flex;
+    flex-direction: column;
+}
+.explore-content h4{
+    font-size: 6vmin;
+}
+.explore-content .ctn
+{
+    margin-top: 1rem;
+    width: 8rem;
+}
+/* .content-col
+{
+    width: 40%;
+}
+.image-col
+{
+    width: 60%;
+} */
+.tours
+{
+    margin-top: 11rem;
+}
+.tours .row .col{
+    width: 50%;
+}
+.col h3
+{
+    font-size: 3.2vmin;
+}
+
+.tours .col ,p
+{
+    margin-left: 1rem;
+}
+.tours .image-gallery
+{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.image-gallery img
+{
+    max-width: 270px;
+    border: 4px solid white;
+}
+.fotter
+{
+    
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.social-media i
+{
+    font-size: 20px;
+    width: 50px;
+    margin: 1.7rem;
+    cursor: pointer;
+}
+.copy-content
+{
+    font-size: 1.2vmin;
+    font-family: Poppins,sans-serif;
+}
+
+
+
+
+@media only screen and (max-width:850px)
+{
+    .navbar{
+        padding: 0;
+    }
+    #menu-bar
+    {
+        display: block;
+    }
+    .logo
+    {
+        position: absolute;
+        top: 3rem;
+        left: 1rem;
+    }
+    .navlinks
+    {
+        
+        border: 2px solid white;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: black;
+        margin-top: -90rem;
+        /* border-bottom-left-radius: 150px; */
+        transition: all 0.5s ease;
+    }
+    .mobile-menu
+    {
+        margin-top: 0;
+    }
+    .navlinks li
+    {
+        margin: 2rem auto;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row .col 
+    {
+        margin: 2rem auto;
+    }
+    .col img 
+    {
+        max-width: 90%;
+    }
+    .tours .row .col
+    {
+        width: 100%;
+    }
+    .explore-content
+    {
+        width: 100%;
+    }
+    .image-gallery img
+    {
+        width: 90%;
+        margin-left: 2.5rem;
+    }
+    
+}
+
+/* Animations */
+img{
+    transition: transform .3s ease;
+}
+img:hover
+{
+    transform: scale(0.9);
+}
+.ctn:hover
+{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+.ctn1:hover
+{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    border-radius: 30px;
+}
